@@ -13,7 +13,10 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    Lexend: require('../assets/fonts/Lexend-VariableFont_wght.ttf'),
+    LexendBold: require('../assets/fonts/LexendDeca-Bold.ttf'),
+    Convergence: require('../assets/fonts/Convergence-Regular.ttf'),
+    Gelion: require('../assets/fonts/Gelion Bold.ttf'),
   });
 
   useEffect(() => {
