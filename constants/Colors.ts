@@ -31,5 +31,6 @@ export const Colors = {
     primary: "#edf0eb"
   },
   primary: '#edf0eb',
-  text: '#18204a'
+  text: '#18204a',
+  blurText: '#525975'
 };
