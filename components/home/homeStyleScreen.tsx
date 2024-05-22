@@ -6,13 +6,14 @@ export const HomeStyles = StyleSheet.create({
     container: {
         flexDirection: 'column',
         backgroundColor: Colors.primary
-
+    },
+    containerMargin: {
+        marginHorizontal: '5%'
     },
     header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        marginTop: '5%',
-        marginHorizontal: '5%'
+        marginTop: '5%'
     },
     flexTextHeader: {
         flexDirection: 'column',
@@ -38,18 +39,17 @@ export const HomeStyles = StyleSheet.create({
     flexTitle: {
         flexDirection: 'row',
         marginTop: '3%',
-        marginHorizontal: '6%',
+        marginHorizontal: '1%',
         justifyContent: 'space-between'
     },
     containerTextTilte: {
         justifyContent: 'flex-start',
         alignItems: 'center',
-        marginHorizontal: '20%',
         marginTop: -28
     },
     textTilte: {
-        fontFamily: 'LexendBold',
-        fontSize: 29,
+        fontFamily: 'Lexend',
+        fontSize: 30,
         color: Colors.text,
         letterSpacing: 0.5
     },
@@ -63,6 +63,9 @@ export const HomeStyles = StyleSheet.create({
         height: 65,
         marginRight: '1%'
     },
+    containerContent: {
+        marginLeft: '2%',
+    },
     containerTextInput: {
         marginTop: '8%',
         justifyContent: 'center',
@@ -71,8 +74,8 @@ export const HomeStyles = StyleSheet.create({
         marginRight: '3%'
     },
     textInput: {
-        width: '85%',
-        height: 51,
+        width: '99%',
+        height: 50,
         backgroundColor: 'white',
         borderWidth: 0,
         borderRadius: 8,
@@ -83,5 +86,20 @@ export const HomeStyles = StyleSheet.create({
     },
     iconTextInput: {
         marginLeft: '-7%'
+    },
+    containFirstDirection: {
+        marginTop: '10%',
+    },
+    direction: {
+        width: '100%',
+        height: 1,
+        backgroundColor: Colors.text
+    },
+    containerTitleContent: {
+        marginVertical: '4%'
+    },
+    titleContent: {
+        fontFamily: 'Lexend',
+        fontSize: 19
     }
 })

@@ -5,11 +5,12 @@ import FontAwesome5 from '@expo/vector-icons/FontAwesome5';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { FontAwesome } from '@expo/vector-icons';
+import { Directions } from 'react-native-gesture-handler';
 
 const HomeScreen = () => {
   return (
     <SafeAreaView style={HomeStyles.container}>
-      <ScrollView>
+      <ScrollView style={HomeStyles.containerMargin}>
         <View style={HomeStyles.header}>
           <View style={HomeStyles.flexTextHeader}>
             <Text style={HomeStyles.textHeader}>QUICK</Text>
@@ -37,8 +38,20 @@ const HomeScreen = () => {
             placeholderTextColor={'#BBBBBB'}
           />
           <TouchableOpacity style={HomeStyles.iconTextInput}>
-           <FontAwesome name="search" size={15} color="#1f2750"/>
+          <FontAwesome name="search" size={15} color="#1f2750"/>
           </TouchableOpacity>
+        </View>
+        <View style={HomeStyles.containerContent}>
+          <View style={HomeStyles.containFirstDirection}>
+            <View style={HomeStyles.direction}/>
+          </View>
+          <View style={HomeStyles.containerTitleContent}>
+            <Text style={HomeStyles.titleContent}>How it works</Text>
+          </View>
+          <View style={HomeStyles.direction}/>
+          <ScrollView>
+            
+          </ScrollView>
         </View>
       </ScrollView>
     </SafeAreaView>
