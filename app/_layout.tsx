@@ -14,6 +14,7 @@ export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
     Lexend: require('../assets/fonts/Lexend-VariableFont_wght.ttf'),
+    Lexend700: require('../assets/fonts/Lexend700.ttf'),
     LexendRegular: require('../assets/fonts/Lexend-Regular.ttf'),
     Convergence: require('../assets/fonts/Convergence-Regular.ttf'),
     Gelion: require('../assets/fonts/Gelion Bold.ttf'),

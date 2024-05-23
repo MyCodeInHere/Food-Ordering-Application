@@ -10,7 +10,7 @@ import { Directions } from 'react-native-gesture-handler';
 const HomeScreen = () => {
   return (
     <SafeAreaView style={HomeStyles.container}>
-      <ScrollView style={HomeStyles.containerMargin}>
+      <ScrollView style={HomeStyles.containerMargin} showsVerticalScrollIndicator={false} showsHorizontalScrollIndicator={false}>
         <View style={HomeStyles.header}>
           <View style={HomeStyles.flexTextHeader}>
             <Text style={HomeStyles.textHeader}>QUICK</Text>
@@ -49,7 +49,7 @@ const HomeScreen = () => {
             <Text style={HomeStyles.titleContent}>How it works</Text>
           </View>
           <View style={HomeStyles.horizontalDirection}/>
-          <ScrollView horizontal={true}>
+          <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} showsVerticalScrollIndicator={false}>
             <View style={HomeStyles.containStepByStep}>
               <View style={HomeStyles.stepByStep}>
                 <Image style={HomeStyles.stepImage} source={require('../../assets/images/Step/StepByStep.png')}/>
